@@ -55,7 +55,11 @@ Cum sociis natoque penatibus et magnis dis `code element` montes, nascetur ridic
 // Example can be run directly in your JavaScript console
 
 // Create a function that takes two arguments and returns the sum of those arguments
+
  <CardR title="Amount of money" number="$12900" icon={BatteryCharging80Icon}/>
+
+
+
 ```
 
 <!--page-->
