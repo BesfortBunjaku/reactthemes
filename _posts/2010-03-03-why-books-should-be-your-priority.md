@@ -4,8 +4,8 @@ layout: post
 title: Why books should be your priority?
 subtitle: Lorem ipsum dolor sit amet, consectetur adipisicing elit.
 description: Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-image: https://besfortbunjaku.github.io/reactthemes/assets/img/card1.PNG
-optimized_image: https://besfortbunjaku.github.io/reactthemes/assets/img/card1.PNG
+image: https://besfortbunjaku.github.io/assets/img/card1.PNG
+optimized_image: https://besfortbunjaku.github.io/assets/img/card1.PNG
 category: life
 tags:
   - books
@@ -55,71 +55,12 @@ Cum sociis natoque penatibus et magnis dis `code element` montes, nascetur ridic
 // Example can be run directly in your JavaScript console
 
 // Create a function that takes two arguments and returns the sum of those arguments
-
  <CardR title="Amount of money" number="$12900" icon={BatteryCharging80Icon}/>
-
 ```
-
 
 <!--page-->
 
 Aenean lacinia bibendum nulla sed consectetur. Etiam porta sem malesuada magna mollis euismod. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa.
-
-
-
-```js
-    import { Paper, SvgIcon } from "@mui/material";
-    import React, { Component } from "react";
-    import { styled } from "@mui/material/styles";
-
-    const CustomPaper = styled(Paper)`
-      color: #beb7b7;
-      width: inherit;
-      height: inherit;
-      background-color: ${(props) => props.backgroundColor || "#272a31"};
-    `;
-
-    const CardTitle = styled("h4")`
-      color: ${(props) => props.titleColor || "#beb7b7"};
-      text-align: start;
-      padding-top: 30px;
-      padding-left: 20px;
-      margin: 0;
-    `;
-
-    const CardNumber = styled("span")`
-      font-weight: 600;
-      color: ${(props) => props.numberColor || "#beb7b7"};
-      font-size: 30px;
-      float: left;
-      padding-left: 20px;
-      padding-top: 10px;
-    `;
-
-    export default class CardR extends Component {
-      render() {
-        return (
-          <CustomPaper elevation={24}>
-            <CardTitle titleColor={this.props.titleColor}>
-              {this.props.title}
-            </CardTitle>
-            <CardNumber>{this.props.number}</CardNumber>
-            <SvgIcon
-              sx={{
-                color: `${this.props.iconColor || "#F7B03E"}`,
-                fontSize: "48px",
-                paddingTop: "5px",
-                paddingRight: "20px",
-                float: "right",
-              }}
-              component={this.props.icon}
-            />
-          </CustomPaper>
-        );
-      }
-    }
-
-```
 
 ## Lists
 
