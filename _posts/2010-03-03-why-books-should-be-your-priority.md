@@ -66,6 +66,59 @@ Cum sociis natoque penatibus et magnis dis `code element` montes, nascetur ridic
 
 Aenean lacinia bibendum nulla sed consectetur. Etiam porta sem malesuada magna mollis euismod. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa.
 
+```js
+
+    import { Paper, SvgIcon } from "@mui/material";
+    import React, { Component } from "react";
+    import { styled } from "@mui/material/styles";
+
+    const CustomPaper = styled(Paper)`
+      color: #beb7b7;
+      width: inherit;
+      height: inherit;
+      background-color: ${(props) => props.backgroundColor || "#272a31"};
+    `;
+
+    const CardTitle = styled("h4")`
+      color: ${(props) => props.titleColor || "#beb7b7"};
+      text-align: start;
+      padding-top: 30px;
+      padding-left: 20px;
+      margin: 0;
+    `;
+
+    const CardNumber = styled("span")`
+      font-weight: 600;
+      color: ${(props) => props.numberColor || "#beb7b7"};
+      font-size: 30px;
+      float: left;
+      padding-left: 20px;
+      padding-top: 10px;
+    `;
+
+    export default class CardR extends Component {
+      render() {
+        return (
+          <CustomPaper elevation={24}>
+            <CardTitle titleColor={this.props.titleColor}>
+              {this.props.title}
+            </CardTitle>
+            <CardNumber>{this.props.number}</CardNumber>
+            <SvgIcon
+              sx={{
+                color: `${this.props.iconColor || "#F7B03E"}`,
+                fontSize: "48px",
+                paddingTop: "5px",
+                paddingRight: "20px",
+                float: "right",
+              }}
+              component={this.props.icon}
+            />
+          </CustomPaper>
+        );
+      }
+    }
+```
 ## Lists
 
 Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Aenean lacinia bibendum nulla sed consectetur. Etiam porta sem malesuada magna mollis euismod. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.
