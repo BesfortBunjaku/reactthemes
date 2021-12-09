@@ -87,14 +87,14 @@ Aenean lacinia bibendum nulla sed consectetur. Etiam porta sem malesuada magna m
       margin: 0;
     `;
 
-    const CardNumber = styled("span")`
+    <!-- const CardNumber = styled("span")`
       font-weight: 600;
       color: ${(props) => props.numberColor || "#beb7b7"};
       font-size: 30px;
       float: left;
       padding-left: 20px;
       padding-top: 10px;
-    `;
+    `; -->
 
     export default class CardR extends Component {
       render() {
